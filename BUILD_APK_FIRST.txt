@@ -1,0 +1,27 @@
+LocalVision APP V9.1 APK 빌드 안내
+
+이 폴더는 Android Studio에서 바로 열 수 있는 V9.1 소스 프로젝트입니다.
+현재 ChatGPT 실행 환경은 Gradle 배포본 다운로드가 차단되어 APK를 새로 빌드할 수 없습니다.
+
+안준님 PC에서:
+1. Android Studio 실행
+2. Open > 이 폴더 선택
+3. Gradle Sync 완료
+4. Build > Build Bundle(s) / APK(s) > Build APK(s)
+5. 생성 위치: app/build/outputs/apk/debug/app-debug.apk
+6. 파일명을 LVAPP_V9.1.apk로 바꿔 사용하면 됩니다.
+
+반영된 핵심:
+- APP ID 중심 구조: lv001, lv002 방식
+- 앱 실행 시 CMS /api/app-config?id=APP_ID 조회
+- CMS가 반환한 최신 Player URL로 WebView 실행
+- CMS가 반환한 store 기준으로 heartbeat / screenshot / command 처리
+- 기본 URL fallback: https://buly.kr/
+- 기본 apiBase: https://localvision-cms.pages.dev
+- APP 버전: V9.1
+- CMS 연동 버전: v1.7.5
+- Player 연동 버전: v1.6.8
+- heartbeat 기본 300000ms(5분)
+- commandPoll 기본 300000ms(5분)
+- noticePollMs 기본 300000ms(1분)
+- refresh/contentCheck 기본 480000ms(8분)

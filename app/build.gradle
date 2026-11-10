@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.localvision.tvapp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.localvision.tvapp'
+        minSdk 23
+        targetSdk 35
+        versionCode 92
+        versionName '9.2-minimal-shell-cms175-player168'
+    }
+}

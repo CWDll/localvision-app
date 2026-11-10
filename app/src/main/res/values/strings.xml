@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocalVision</string>
+    <string name="accessibility_service_name">LocalVision 자동 복귀</string>
+    <string name="accessibility_service_description">홈 화면이나 다른 앱으로 나갔을 때 LocalVision 화면으로 자동 복귀합니다.</string>
+</resources>

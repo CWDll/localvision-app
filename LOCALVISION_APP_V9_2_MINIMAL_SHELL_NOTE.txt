@@ -1,0 +1,15 @@
+# LocalVision APP v9.2 Minimal Shell
+
+## 핵심 원칙
+- APP은 Android TV에서 Player URL을 안정적으로 띄우는 껍데기입니다.
+- Player가 heartbeat/공지/명령/오류복구를 담당합니다.
+- APP은 app-config 조회, WebView 전체화면, 화면꺼짐 방지, 0번 5회 설정, Native screenshot bridge만 담당합니다.
+
+## 제거/축소
+- APP Native heartbeat 루프 제거
+- APP native-command 폴링 제거
+- native=1 강제 삽입 제거
+- Player URL 운영값 강제 덮어쓰기 제거
+
+## 호환 기준
+CMS v1.7.5 + Player v1.6.8

@@ -1,0 +1,17 @@
+[1] Java source brace balance
+OK BootReceiver.java lines 25
+OK LocalVisionAccessibilityService.java lines 50
+OK LocalVisionSettings.java lines 245
+OK MainActivity.java lines 623
+OK SettingsActivity.java lines 308
+[2] Old version string check, excluding build caches
+OK no old version strings in source/docs
+[3] Required APP v9.1 strings
+OK required APP strings present
+[4] JS syntax checks
+OK JS syntax
+[5] Player native heartbeat check
+OK Player disables web heartbeat when native=1
+[6] CMS screenshot R2 path check
+OK screenshots are stored as PNG in R2
+ALL STATIC TESTS PASSED

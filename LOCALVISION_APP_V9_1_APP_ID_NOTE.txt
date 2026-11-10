@@ -1,0 +1,20 @@
+LocalVision APP V9.1 APP ID 버전
+
+수정 기준:
+- CMS v1.7.4 auto app id
+- Player v1.6.7 watchdog refresh 480000
+
+주요 반영:
+1. store 직접 입력 방식 제거
+2. 설정 화면의 필수 입력값을 APP ID로 변경
+3. 앱 실행 시 /api/app-config?id=lv001 조회
+4. CMS가 반환한 playerUrl을 WebView에서 실행
+5. CMS가 반환한 store를 저장해 heartbeat, screenshot, command 처리에 사용
+6. 실패 시 마지막 정상 playerUrl 또는 https://buly.kr/ fallback URL 사용
+7. 운영 주기 기본값: heartbeat=300000, commandPoll=300000, noticePollMs=300000, refresh=480000
+8. 버전 문자열: APP v9.1 / CMS v1.7.4 / Player v1.6.7
+
+주의:
+- 이 ZIP은 Android Studio 프로젝트 소스입니다.
+- 이 실행환경에서는 Gradle 배포 파일을 외부에서 다운로드할 수 없어 APK 빌드는 확인하지 못했습니다.
+- Android Studio에서 열면 Gradle 동기화 후 APK를 빌드하면 됩니다.
